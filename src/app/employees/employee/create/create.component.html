@@ -1,0 +1,48 @@
+<p>
+  create works!
+</p>
+<div class="row">
+  <form (ngSubmit)="onAddemployee(form)" #form = "ngForm"  >
+     <div class="col-md-6  col-md-offset-5">
+
+       <div class="row">
+          <label for="name">Name:</label>
+       </div>
+       <div class="row">
+          <input type="text" name="name" ngModel="sunil" >
+       </div>
+
+                  <div class="row">
+                    <label for="email">Email:</label>
+                       </div>
+                       <div class="row">
+                      <input type="text" name="email" ngModel="sunil@gmail.com" >
+                      </div>
+
+
+                      <div class="row">
+                          <label for="name">Mobile</label>
+                            </div>
+                             <div class="row">
+                                <input type="number" name="mobile" ngModel="9838934" >
+                         </div>
+
+            <div class="row">d
+                <label for="salary">Salary:</label>
+                </div>
+                   <div class="row">
+                <input type="number" name="salary" ngModel="1000" >
+               </div>
+
+
+
+       <hr>
+       <div class="row col-md-offset-1" >
+          <button class="btn btn-primary" type="submit">Add</button>
+       </div>
+     </div>
+
+
+
+    </form>
+</div>

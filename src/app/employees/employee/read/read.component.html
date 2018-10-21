@@ -1,0 +1,17 @@
+<p>
+  read works!
+</p>
+
+<div class="right" *ngIf="Employee">
+
+    <h3>Employee</h3>
+    <ul>
+      <li
+      (click)="delTutorial(i)"
+       *ngFor="let emp of Employee | async;
+       let i = index">
+     Name: {{ emp.name }},Mobile:{{ emp.mobile }},Email: {{ emp.email }} ,Salary:  {{ emp.salary }}
+      </li>
+    </ul>
+
+  </div>
